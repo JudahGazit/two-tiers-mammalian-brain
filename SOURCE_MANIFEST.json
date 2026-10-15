@@ -1,0 +1,122 @@
+{
+  "source_revision": "bb808b9060119439f2cc04264f5bb5a84519145a",
+  "note": "Export of allowlisted working files; hashes describe actual contents, including uncommitted changes.",
+  "transformations": [
+    "Resolve data paths using BRAIN_NETS_DATA_DIR",
+    "Resolve output paths using BRAIN_NETS_OUTPUT_DIR",
+    "Find optional FFmpeg on PATH",
+    "Normalize exported whitespace and LF line endings"
+  ],
+  "files": [
+    {
+      "path": "Code/style.py",
+      "source_sha256": "a3d2ecfb91f4ef663b0c67b9c7d3946c6b606e74fb6f2c48cc279104af2fb45a",
+      "export_sha256": "a19b0786126440bff99d5879cc6e6518b2a240be6dfd1e88c7fc8323bebe55ff"
+    },
+    {
+      "path": "Code/figures/utils.py",
+      "source_sha256": "8f96ac2c6e6db743daccdd768b1bac29ea251e65faf668b504b015055ee57b99",
+      "export_sha256": "9d0878f408f0b1fd2aaefccf354d298d1e34b3d0dc93a2e9fa442cccc3cf72a9"
+    },
+    {
+      "path": "Code/figures/figure1.py",
+      "source_sha256": "e56e9ab86477cb4f228fdde286dbb88e7a734f58ff6f6ba78ad67714ea123135",
+      "export_sha256": "ea53b6c02db1928d1efbb8fc8315074711d9eefcac5a3191300f2868d7924f23"
+    },
+    {
+      "path": "Code/figures/figure2.py",
+      "source_sha256": "658e0339fc13cfa3444f1d823761dd01f4cb421861e872e788ceb3041af4e19f",
+      "export_sha256": "93813a483b32215cca2e7690a246c9129b2a6046aac05af83f62592afe86eca4"
+    },
+    {
+      "path": "Code/figures/figure3.py",
+      "source_sha256": "9ef791c9bd06234426090fdea08072eabeedf95306b110e77c4c34a12b35ccb6",
+      "export_sha256": "88cbcee8599959a49d313c630558f962805807b908c4e9c73ec0a739527bfb93"
+    },
+    {
+      "path": "Code/figures/figure4.py",
+      "source_sha256": "cede01d933b107910f5fa7770f028cfa568352047efe87d6bab910d306772163",
+      "export_sha256": "0cbaa47ba24eb545c3afbab1db986f4d3a2f8ccce012b0b16122a001a37b46d2"
+    },
+    {
+      "path": "Code/figures/figure5.py",
+      "source_sha256": "d9057c269002c8d1a4d5dcaf0d8a2fbbd6a23afb77a4d6f072427f6d46c09580",
+      "export_sha256": "a4f97b94f552764bcbfb720351c999af441a0d53e1a16b2c4862f381dd2befb5"
+    },
+    {
+      "path": "Code/figures/figure6.py",
+      "source_sha256": "7b9658ac7b416b5c73df3cfc0869eb9defb048cef3239536eee8f983a23a7b23",
+      "export_sha256": "e8ecf0874087d4d22728511ad2a143f3339c767b2b91dc04d65f18de273fdc3c"
+    },
+    {
+      "path": "Code/figures/supfigure2.py",
+      "source_sha256": "3f36331a983b7f451fc6ca02a6c356491fb0ed4afd172ab3a2e43cbfaaa44689",
+      "export_sha256": "b1d6a98df3cb903fd51cb0ac422b9d84c2173907409425eb3f6e0e6ee3bdd9d2"
+    },
+    {
+      "path": "Code/figures/supfigure4.py",
+      "source_sha256": "704440ca794f2b11ff880f5109950d38dcd23aa5bcecf1c619e3ac665a7d7375",
+      "export_sha256": "0ab17742adca19cf21bd2e948a7deaa63ebc20f6614a2f385f5312533df39586"
+    },
+    {
+      "path": "Code/figures/supfigure6.py",
+      "source_sha256": "cd7c81b977386eab9e3eb22d81afbd9f32c5e335be94a4859368de56d550b8ec",
+      "export_sha256": "ecf5799412d8a63e62e897026bbcb9a3e2dfb6bfd985296c9f8c7d44d9caa90c"
+    },
+    {
+      "path": "Code/dataloaders/brain_net.py",
+      "source_sha256": "1982a9394edcbb8763d3705cc00725e8036718e327a8022710fe726c56f483c3",
+      "export_sha256": "2158fbeb4b35c719aea6e9c0bca30fac90fdddb516932de0a02086d6bfa9d5c1"
+    },
+    {
+      "path": "Code/dataloaders/fiber_length_interpolation.py",
+      "source_sha256": "b0eb99a1f827a0d380abb23c435d15cbd8d6499d52f0d9d86d9854498d0eb468",
+      "export_sha256": "422a18cfc932bce5402fe21a8f341f6e9922829e532c5eece2dafd6ed0fb9c6c"
+    },
+    {
+      "path": "Code/core_periphery/core_periphery.py",
+      "source_sha256": "0735c044d8fea15321fb8404525b5051367d70721ca642f83730a94d4fa6db4f",
+      "export_sha256": "b08f8755f5ebc37ab94713bef2eabb1a4e04f9ec9fa65f85f1ac27d733fc5466"
+    },
+    {
+      "path": "Code/metrics/metric.py",
+      "source_sha256": "8eeae954dd796385cc246b5acb6ade793d03054ea5ebdff9c9ee3fd68c088b05",
+      "export_sha256": "4cd4d6045612ae078cc3eccde4f56c34f4a8c82cdbcb58f6dff6619d29369b24"
+    },
+    {
+      "path": "Code/metrics/icost.py",
+      "source_sha256": "62de8babd9f4ba11ef013891327b770b9b081f96962783697572c143fb194fbe",
+      "export_sha256": "b31994d1e6ddf9dc695671f7aa8eb438fd4f89d0f382ba4ac9d2f17e005461a0"
+    },
+    {
+      "path": "Code/metrics/routing_cost.py",
+      "source_sha256": "b80b8c7db4ba14221232d2b2b8cd29d5c10c6b3b074a528e5d01c3963d70ba48",
+      "export_sha256": "a937328305cd5ad0d50b28c8d385bb18149eec891da3bb7b26641d6d74c1359c"
+    },
+    {
+      "path": "Code/metrics/wiring_cost.py",
+      "source_sha256": "19c791f8bdc436842201b92d8d3136e51fa18e535c75c551cbc14bc010e906fc",
+      "export_sha256": "c561fd4d971c86b53eb2acbbc06ad5b0a643b9800b89875612a2acf84a487577"
+    },
+    {
+      "path": "Code/projections/brain_alignment.py",
+      "source_sha256": "3932208565385894ee93bb9567f647cc6570e306ec1abd257e00fdf9e17a069f",
+      "export_sha256": "3560fe70b97ab01dc6ef4eb24ce20af26d9019e89bf07340684af9adba7fbdcd"
+    },
+    {
+      "path": "Code/projections/brain_projection.py",
+      "source_sha256": "70395b17564caab52b7a73ec5f2df0c2288981a288219c4cbe57f9209a3f8871",
+      "export_sha256": "3be6b19b6325d6ba053771b868ef3b71756f5c1b7dd8296c57ce83d269e37976"
+    },
+    {
+      "path": "Code/projections/brain_stack.py",
+      "source_sha256": "1fc2a461930e92c6d85a5757eadf9ef217d697c3e12194b8bdebb393ad496deb",
+      "export_sha256": "318f2e6b941f588ab3c8f61b3ea5190ecdde528a247a59a229e8033f2210b618"
+    },
+    {
+      "path": "Code/projections/brain_tracts.py",
+      "source_sha256": "2bb9a2c18ffd702d292000261f717ffdcce7dd49dfbfff4fa7e0c74cd518b36b",
+      "export_sha256": "6c07ae7502db204f72094bdcdb95ee36b485c3e4767dd83751b68d68c13efc62"
+    }
+  ]
+}

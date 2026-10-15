@@ -1,0 +1,18 @@
+{
+  "source_files": 22,
+  "source_hashes": "passed",
+  "export_hashes": "passed",
+  "scientific_ast_equivalence": "passed",
+  "python_syntax": "passed",
+  "demo_from_unrelated_directory": "passed",
+  "missing_data_diagnostic": "passed",
+  "synthetic_results": {
+    "seed": 0,
+    "nodes": 40,
+    "core_nodes": 12,
+    "mean_shortest_path": 1.6935897435897436,
+    "independent_routing_check": "passed",
+    "identity_projection_check": "passed",
+    "note": "Synthetic demonstration; not manuscript data."
+  }
+}

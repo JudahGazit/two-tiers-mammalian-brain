@@ -1,0 +1,16 @@
+# Data and artwork remain external, even if copied here for local reproduction.
+/Datasets/*
+!/Datasets/README.md
+/outputs/
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/
+.env
+.env.*
+*.log
+Thumbs.db
+.DS_Store
