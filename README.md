@@ -65,6 +65,17 @@ affect repeatability. Execution timings and return codes go to
 | `supfigure2` | `Code/figures/supfigure2.py` | `SuppFigures/figure2_3.png` |
 | `supfigure4` | `Code/figures/supfigure4.py` | `SuppFigures/figure4_0.png` |
 | `supfigure6` | `Code/figures/supfigure6.py` | `SuppFigures/figure6_0.png` through `_2.png` |
+| `supfigure_distance_metric` | `Code/figures/supfigure_distance_metric.py` | `SuppFigures/S_euclid_orders.png`, `S_euclid_shape.png`, `S_euclid_ev.png` |
+| `supfigure_min_instances` | `Code/figures/supfigure_min_instances.py` | `SuppFigures/S_min_instances.png` |
+| `supfigure_node_profiles` | `Code/figures/supfigure_node_profiles.py` | `SuppFigures/S_node_profiles.png` |
+| `supfigure_hcp` | `Code/figures/supfigure_hcp.py` | `SuppFigures/S_hcp.png` |
+| `suptable_modules` | `Code/figures/suptable_modules.py` | `SuppTables/S_modules.csv` (table printed to the console) |
+
+The last five commands produce the supplementary analyses added in the revision (Supplementary
+Sections 3.4, 3.5, 4, 5.2, 5.3, 5.5 and 11). They are built on `Code/analysis/`, and print the numbers
+quoted in the Supplementary Information. `supfigure_hcp` downloads 200 public atlas connectomes
+of the Human Connectome Project from Open NeuroData on first use and caches them under
+`<data-dir>/hcp_atlas/`; it requires internet access.
 
 The scripts determine the active supplementary panels. Several alternate
 Supplementary Figure 2 functions exist but are disabled in the source; this
@@ -73,7 +84,9 @@ final manuscript figures, including any manual composition or postprocessing.
 
 ## Code organization and provenance
 
-`Code/dataloaders/` loads processed connectomes and includes interpolation
+`Code/analysis/` holds the revision analyses (tail test, Euclidean and brain-shape
+controls, link-threshold control, node-level linking profiles and their synthetic controls,
+modules, and the HCP connectomes). `Code/dataloaders/` loads processed connectomes and includes interpolation
 helpers; `Code/core_periphery/` defines the separation; `Code/metrics/` computes
 wiring and routing measures; `Code/projections/` aligns and projects brains and
 tracts. `Code/figures/` assembles the figures. `SOURCE_MANIFEST.json` records

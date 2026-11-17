@@ -12,6 +12,11 @@ import time
 
 ROOT = Path(__file__).resolve().parent
 FIGURES = [f'figure{i}' for i in range(1, 7)] + [f'supfigure{i}' for i in (2, 4, 6)]
+REVISION = ['supfigure_distance_metric', 'supfigure_min_instances', 'supfigure_node_profiles',
+            'supfigure_hcp', 'suptable_modules']
+FIGURES += REVISION
+REVISION_INPUTS = {'supfigure_distance_metric': ['MamiNum_formatted.csv'],
+                   'supfigure_min_instances': ['brain_nets_mat/*_FinalFinal2.mat']}
 
 
 def check_inputs(name, data):
@@ -19,6 +24,10 @@ def check_inputs(name, data):
     patterns = ['brain_nets_fixed_means_knn/*.connections.npy',
                 'brain_nets_fixed_means_knn/*.distances.npy',
                 'brain_nets_fixed_means_knn/*.positions.npy']
+    if name == 'supfigure_hcp':
+        return []  # downloads the HCP connectomes from Open NeuroData into <data-dir>/hcp_atlas
+    if name in REVISION:
+        return [p for p in patterns + REVISION_INPUTS.get(name, []) if not any(data.glob(p))]
     if name not in ('supfigure2', 'supfigure4'):
         patterns += ['images/animals/*.png']
     if name in ('figure2', 'figure5', 'figure6', 'supfigure6'):

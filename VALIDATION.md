@@ -48,3 +48,15 @@ here. Existing cached projections and parallel operations can affect results.
 
 The existing Figure 6 tract cache is approximately 1.44 GB and is kept external.
 Loading it can require substantial memory; it was not loaded during validation.
+
+## Revision analyses — 17 November 2026
+
+Five commands added for the revised Supplementary Information (`supfigure_distance_metric`,
+`supfigure_min_instances`, `supfigure_node_profiles`, `supfigure_hcp`, `suptable_modules`) were run
+through `run_figures.py` in the reference environment, with an external data directory containing the
+processed mammalian connectomes, the realization files (`brain_nets_mat/`), the metadata and a cache of
+the public HCP connectomes. All five completed with exit code 0 and wrote their figures
+(`SuppFigures/S_*.png`) and table (`SuppTables/S_modules.csv`). Every number they print matches the
+values reported in Supplementary Sections 3.4–3.5, 4, 5.2, 5.3, 5.5 and 11, including the synthetic
+controls (seed 0). `suptable_modules`, the slowest command, took about 29 minutes. The exported files
+match their recorded source hashes in `SOURCE_MANIFEST.json`.

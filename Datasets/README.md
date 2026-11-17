@@ -23,6 +23,10 @@ brain_nets_fixed_means_knn/
     <brain>.positions.npy
 brain_nets_raw/
     <brain>Surface.nii OR <brain>_1vol.nii
+brain_nets_mat/
+    <brain>_FinalFinal2.mat [the 20 tractography realizations; field conmatT]
+hcp_atlas/
+    [created automatically by supfigure_hcp; public HCP connectomes from Open NeuroData]
 brain_net_control/
     results.mat OR <brain>.npy control ensembles
 brain_nets_tracts/streamlines_core/
@@ -63,6 +67,10 @@ Input groups by figure:
 | 6 | MRI, tracts, human connectomes, metadata, silhouettes, three pickle caches; `brain_projection_illustration_a.png`, `_b.png`, `_c.png` |
 | Supplementary 2 and 4 | Processed mammalian connectomes |
 | Supplementary 6 | MRI, tracts, human connectomes, metadata and caches (via Figure 6 import) |
+| Distance metric (SI 4, 5.3) | Processed mammalian connectomes; metadata (`Order`) |
+| Link thresholds (SI 3.5) | Processed mammalian connectomes; `brain_nets_mat/` realization files |
+| Node profiles (SI 5.2), modules (SI 5.5) | Processed mammalian connectomes |
+| HCP (SI 11) | None locally: Schaefer-200/400 connectomes of the HCP-1200 release are downloaded from `s3://open-neurodata/hcp1200`, atlases from `s3://open-neurodata/neuroparc` |
 
 Figure 5 can write `brain_net_control/results.mat` when absent. Figure 6 caches
 are currently mandatory at import; cached projections may be recomputed in

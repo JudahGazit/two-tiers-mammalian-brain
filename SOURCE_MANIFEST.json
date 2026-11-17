@@ -1,11 +1,12 @@
 {
-  "source_revision": "bb808b9060119439f2cc04264f5bb5a84519145a",
+  "source_revision": "b75d904ef6cba6da4505c14944f0f75d4bd66a42",
   "note": "Export of allowlisted working files; hashes describe actual contents, including uncommitted changes.",
   "transformations": [
     "Resolve data paths using BRAIN_NETS_DATA_DIR",
     "Resolve output paths using BRAIN_NETS_OUTPUT_DIR",
     "Find optional FFmpeg on PATH",
-    "Normalize exported whitespace and LF line endings"
+    "Normalize exported whitespace and LF line endings",
+    "Revision analyses: MaMI realization files, metadata and the HCP cache resolve through BRAIN_NETS_DATA_DIR"
   ],
   "files": [
     {
@@ -117,6 +118,86 @@
       "path": "Code/projections/brain_tracts.py",
       "source_sha256": "2bb9a2c18ffd702d292000261f717ffdcce7dd49dfbfff4fa7e0c74cd518b36b",
       "export_sha256": "6c07ae7502db204f72094bdcdb95ee36b485c3e4767dd83751b68d68c13efc62"
+    },
+    {
+      "path": "Code/analysis/__init__.py",
+      "source_sha256": "22b92319149135c01ed64e58f2b22d6137f085cc0d22a3efe03bd67e781bdf08",
+      "export_sha256": "22b92319149135c01ed64e58f2b22d6137f085cc0d22a3efe03bd67e781bdf08"
+    },
+    {
+      "path": "Code/analysis/brain_shape.py",
+      "source_sha256": "4bd7568474ba9e5c964de31e33a31d211559902dc8a0331c7628da257faac7a8",
+      "export_sha256": "4bd7568474ba9e5c964de31e33a31d211559902dc8a0331c7628da257faac7a8"
+    },
+    {
+      "path": "Code/analysis/connectome.py",
+      "source_sha256": "2e0b5b21e99570c872a6b64b5b624ba2b18ffb1e0227216e486ea0dd020a50b0",
+      "export_sha256": "390de1f9a14997f2e7073bda4791b870bba93d859dd5de76b67f9cc8ba6c1ef9"
+    },
+    {
+      "path": "Code/analysis/density.py",
+      "source_sha256": "bff1fb8b7feb5489ba876f2da0b60fa4739374b83a932d14ba199868e404838a",
+      "export_sha256": "bff1fb8b7feb5489ba876f2da0b60fa4739374b83a932d14ba199868e404838a"
+    },
+    {
+      "path": "Code/analysis/explorers.py",
+      "source_sha256": "ed0346be9bdc1d1f792a886648342be913046bceb831c797f0c875dd8130d22e",
+      "export_sha256": "ed0346be9bdc1d1f792a886648342be913046bceb831c797f0c875dd8130d22e"
+    },
+    {
+      "path": "Code/analysis/hcp.py",
+      "source_sha256": "1bd80f9bd1d550db4fbc13fb427aa626bade81a3dff81b6f2cd5345506c1cfd7",
+      "export_sha256": "52ea957d01157e8aab768ded8d087dbae19b9b8336e9f5bd4359508269ad333f"
+    },
+    {
+      "path": "Code/analysis/modules.py",
+      "source_sha256": "6880a2685a016b64e2bedea48d4aa4b77b3d85481466f02e2d7b67a01becdf12",
+      "export_sha256": "6880a2685a016b64e2bedea48d4aa4b77b3d85481466f02e2d7b67a01becdf12"
+    },
+    {
+      "path": "Code/analysis/node_profiles.py",
+      "source_sha256": "f8a86d11ce84ed9b46607066045f76f93def3f3843f09ff38f37918553e557b8",
+      "export_sha256": "f8a86d11ce84ed9b46607066045f76f93def3f3843f09ff38f37918553e557b8"
+    },
+    {
+      "path": "Code/analysis/synthetic.py",
+      "source_sha256": "8f3901f12c27a4ae6e4f3e61e521a4335951b85d06346598c1d1d85703c80147",
+      "export_sha256": "8f3901f12c27a4ae6e4f3e61e521a4335951b85d06346598c1d1d85703c80147"
+    },
+    {
+      "path": "Code/analysis/tail_test.py",
+      "source_sha256": "034194662cfdf0068fd795b2709307987643cf96f8be5d1fe85d5408181d6d9d",
+      "export_sha256": "034194662cfdf0068fd795b2709307987643cf96f8be5d1fe85d5408181d6d9d"
+    },
+    {
+      "path": "Code/figures/revision_plots.py",
+      "source_sha256": "f631bd451a206a7eb0937b4659ee3fd04ffee24ec8dfd517d78eca128c5be99e",
+      "export_sha256": "f631bd451a206a7eb0937b4659ee3fd04ffee24ec8dfd517d78eca128c5be99e"
+    },
+    {
+      "path": "Code/figures/supfigure_distance_metric.py",
+      "source_sha256": "0086e2740bb578d4ad71a88a49a48e3da23ed79aabc4f085f298111c3bae71c5",
+      "export_sha256": "4223ce6fcf3d960fbc1189d81edc7f6f02012398e53117309368200640b1d6d6"
+    },
+    {
+      "path": "Code/figures/supfigure_min_instances.py",
+      "source_sha256": "5c5c52bc73ebdbcbc9fd22bf9110f5c3a7e175be957a8219ca0c6a6d7fc58e36",
+      "export_sha256": "49c2dce9c7a7072f0eebbe03c706d658bfd58b116ba90e975b56fb9e6c8b2edd"
+    },
+    {
+      "path": "Code/figures/supfigure_hcp.py",
+      "source_sha256": "55e0c3c04a819cc07f2142b51106e7ac461bc2b71d1a8fcdff15d351659380c7",
+      "export_sha256": "d398379558dbb83726f233c1dcec5a18ecf9f8bd3b0f0826200fc9232171b854"
+    },
+    {
+      "path": "Code/figures/supfigure_node_profiles.py",
+      "source_sha256": "1e467695ccc4ed822c98a262a61d1a8e2b15f82fd3f093300e806afd76c17622",
+      "export_sha256": "079f0d24374dfbad07fd7ae894b42801fc38367c96cc38bc479749b9fe29b907"
+    },
+    {
+      "path": "Code/figures/suptable_modules.py",
+      "source_sha256": "d53f4760c37cc59d9674f1ce5385870922f651994891813ea7f24b52c0b97aaa",
+      "export_sha256": "5a03f3da07d14f4222446d9be5f0fc924116555cb09d0505ac4aa3220cb9d7e8"
     }
   ]
 }
